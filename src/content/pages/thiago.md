@@ -50,7 +50,7 @@ components:
     overlay: ''
     media: /uploads/arqueological-remains_01.jpg
     ctaText: MUDANÇA DE CONTEÚDO!
-    highlightedText: TESTE!
+    highlightedText: TESTE!!
     link:
       url: '#'
       target: _self
