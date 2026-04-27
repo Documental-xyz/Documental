@@ -46,6 +46,15 @@ cta: &cta
       required: true
       hint: 'Enable/disable animations for this component'
       collapsed: true
+    - label: 'Layout'
+      name: 'layout'
+      widget: 'select'
+      options:
+        - { label: 'Texto', value: 'text' }
+        - { label: 'Mídia', value: 'media' }
+      default: 'text'
+      required: true
+      collapsed: true
     - label: 'Text Color'
       name: 'txtColor'
       widget: 'select'
@@ -53,8 +62,16 @@ cta: &cta
         - { label: 'Primary', value: 'Primary' }
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
+        - { label: 'Custom', value: 'Custom' }
       default: 'Primary'
       required: false
+      collapsed: true
+    - label: 'Custom Text Color'
+      name: 'customTxtColor'
+      widget: 'color'
+      required: false
+      enableAlpha: true
+      allowInput: true
       collapsed: true
     - label: 'Background Color'
       name: 'bgColor'
@@ -63,19 +80,56 @@ cta: &cta
         - { label: 'Primary', value: 'Primary' }
         - { label: 'Secondary', value: 'Secondary' }
         - { label: 'Highlight', value: 'Highlight' }
-      default: 'Secundary'
+        - { label: 'Custom', value: 'Custom' }
+      default: 'Secondary'
       required: false
       collapsed: true
-    - label: 'Background Image'
-      name: 'imgBg'
-      widget: 'image'
+    - label: 'Custom Background Color'
+      name: 'customBgColor'
+      widget: 'color'
       required: false
-      allow_multiple: false
+      enableAlpha: true
+      allowInput: true
+      collapsed: true
+    - label: 'Add Background media'
+      name: 'backgroundMedia'
+      required: false
+      widget: 'list'
+      max: 1
+      collapsed: true
+      types:
+        - label: 'Image'
+          name: 'backgroundImage'
+          widget: 'object'
+          collapsed: true
+          fields:
+            - label: 'Image'
+              name: 'imgSrc'
+              widget: 'image'
+              required: false
+              allow_multiple: false
+              collapsed: true
+        - label: 'Video'
+          name: 'backgroundVideo'
+          widget: 'object'
+          collapsed: true
+          fields:
+            - label: 'Video'
+              name: 'videoSrc'
+              widget: 'file'
+              allow_multiple: false
+              required: false
+              collapsed: true
+    - label: 'Overlay'
+      name: 'overlay'
+      widget: 'select'
+      options: ['dark', 'light']
+      required: false
       collapsed: true
     - label: 'Media Type'
       name: 'mediaType'
       widget: 'select'
-      options: ['image']
+      options: ['image', 'video']
       default: 'image'
       required: false
       condition:

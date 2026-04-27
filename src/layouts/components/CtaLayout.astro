@@ -1,5 +1,5 @@
 ---
-import AnimationToggle from "../../components/AnimationToggle.astro";
+import AnimationToggle from '../../components/AnimationToggle.astro';
 
 const { Component, props, pageSettings } = Astro.props;
 const {
@@ -12,44 +12,51 @@ const {
   bgColor,
   ctaText,
   link,
-  imgBg,
+  backgroundMedia,
+  imgBg: imgBgLegacy,
   overlay,
-  videoBg,
   body,
   animations = true
 } = props;
 
-// Nova lógica com 3 opções: enable_all, disable_all, custom
 const globalAnimationMode = pageSettings?.animations || 'enable_all';
 
 let shouldDisableAnimations;
 
 switch (globalAnimationMode) {
   case 'enable_all':
-    shouldDisableAnimations = false; // Sempre habilitado
+    shouldDisableAnimations = false;
     break;
   case 'disable_all':
-    shouldDisableAnimations = true; // Sempre desabilitado
+    shouldDisableAnimations = true;
     break;
   case 'custom':
-    shouldDisableAnimations = !animations; // Segue configuração individual
+    shouldDisableAnimations = !animations;
     break;
   default:
     shouldDisableAnimations = false;
 }
 
-// Se `media` for uma imagem, importamos dinamicamente
 let img;
-if (media && mediaType === 'image' && media) {
+if (media && mediaType === 'image') {
   img = /^https?:\/\//i.test(media) ? media : new URL(media.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
 
-let imgSrc;
-if (imgBg) {
-    imgSrc = /^https?:\/\//i.test(imgBg) ? imgBg : new URL(imgBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
+let imgBg;
+let videoBg;
+
+if (backgroundMedia && backgroundMedia.length > 0) {
+  const bgMedia = backgroundMedia[0];
+  if (bgMedia.type === 'backgroundImage' && bgMedia.imgSrc) {
+    imgBg = bgMedia.imgSrc;
+    imgBg = /^https?:\/\//i.test(imgBg) ? imgBg : new URL(imgBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
+  } else if (bgMedia.type === 'backgroundVideo' && bgMedia.videoSrc) {
+    videoBg = bgMedia.videoSrc;
+    videoBg = /^https?:\/\//i.test(videoBg) ? videoBg : new URL(videoBg.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
+  }
+} else if (imgBgLegacy) {
+  imgBg = /^https?:\/\//i.test(imgBgLegacy) ? imgBgLegacy : new URL(imgBgLegacy.replace(/^\/+/, ''), new URL(import.meta.env.BASE_URL, 'http://local')).pathname;
 }
-
-
 ---
 <AnimationToggle disabled={shouldDisableAnimations}>
   <section id={id} style={`background-color: var(--clr-bg);`}>
@@ -60,7 +67,7 @@ if (imgBg) {
       mediaType={mediaType}
       text={ctaText}
       link={link}
-      imgBg={imgSrc}
+      imgBg={imgBg}
       videoBg={videoBg}
       txtColor={txtColor}
       bgColor={bgColor}

@@ -266,7 +266,7 @@ const componentSchema = z.object({
   media: z.string().optional(),
   mediaType: z.string().optional(),
   ctaText: z.string().optional().transform(processMarkdown),
-  link: linkSchema.optional(),
+  link: linkSchema.nullable().optional(),
   imgBg: z.string().optional(),
   videoBg: z.string().optional(),
   overlay: z.string().optional().nullable(),
