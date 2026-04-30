@@ -1,5 +1,5 @@
 columns: &columns
-  label: 'Columns'
+  label: 'Two Columns'
   name: 'Columns'
   widget: 'object'
   collapsed: true
