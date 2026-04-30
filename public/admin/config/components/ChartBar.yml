@@ -1,5 +1,5 @@
 chartBar: &chartBar
-  label: 'Chart Bar'
+  label: 'Bar Chart'
   name: 'ChartBar'
   widget: 'object'
   summary: '{{fields.chartTitle}}'
