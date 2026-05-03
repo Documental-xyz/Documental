@@ -1172,8 +1172,6 @@ components:
     animations: true
     txtColor: Secondary
     bgColor: Primary
-    mediaType: ''
-    media: ''
     ctaText: 'Bloco: CTA_CTA Text_Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.'
     highlightedText: Sed ut perspiciatis unde omnis iste natus error
     link:
@@ -1411,15 +1409,73 @@ components:
     bgColor: Custom
     customBgColor: '#d78989ff'
     backgroundMedia: []
-    overlay: dark
-    layout: media
-    mediaType: image
-    media: /uploads/alter-do-chao-azul.png
-    ctaText: CTA cta cta cta
-    highlightedText: cta cta cta
+    overlay: ''
+    ctaText: Este é um exemplo de CTA com **layout de texto** e cor de destaque (Highlight). O texto destacado aparece à esquerda e o conteúdo à direita.
+    highlightedText: CTA Texto Simples
     link:
-      url: https://www.advocacia.autonoma.xyz/
+      url: '#'
       target: _self
-      text: autonoma
+      text: Saiba Mais
+  - type: Cta
+    id: cta-exemplo-2
+    shortTitle: CTA com Mídia
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    ctaMedia:
+      - type: ctaImage
+        src: /uploads/casa_afonso_sardinha.jpg
+    ctaText: Este é um exemplo de CTA com **layout de mídia** — a imagem aparece à esquerda e o texto com botão à direita.
+    highlightedText: ''
+    link:
+      url: '#'
+      target: _blank
+      text: Ver Detalhes
+  - type: Cta
+    id: cta-exemplo-3
+    shortTitle: CTA com Background
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Primary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/group-bg.png
+    overlay: dark
+    ctaText: Este é um exemplo de CTA com **imagem de background**, overlay escuro e texto claro sobreposto. Demonstra a integração com `backgroundMedia` e `overlay`.
+    highlightedText: CTA com Background
+    link:
+      url: '#'
+      target: _self
+      text: Explorar
+  - type: Cta
+    id: '222'
+    shortTitle: Tap
+    longTitle: Thiago Paixao
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia:
+      - type: backgroundImage
+        imgSrc: /uploads/casa_afonso_sardinha.jpg
+    overlay: dark
+    ctaText: fsdfsdfsdfd fsdfsd sf sfdf fsdf fsd fsd sfdf sdf wesdvfwegmkadnfrrweuo weoin nwenuo rnweuo rnweruion vsdaeior iwenior ier dsffsdd
+    highlightedText: Teste de CTA
+    link: null
 ---
 
