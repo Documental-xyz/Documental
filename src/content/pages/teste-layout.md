@@ -1461,7 +1461,7 @@ components:
       text: Explorar
   - type: Cta
     id: '222'
-    shortTitle: Tap
+    shortTitle: Tap1
     longTitle: Thiago Paixao
     description: ''
     showInMenu: false
