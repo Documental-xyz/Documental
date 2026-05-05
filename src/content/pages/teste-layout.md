@@ -1481,4 +1481,24 @@ components:
     ctaText: fsdfsdfsdfd fsdfsd sf sfdf fsdf fsd fsd sfdf sdf wesdvfwegmkadnfrrweuo weoin nwenuo rnweuo rnweruion vsdaeior iwenior ier dsffsdd
     highlightedText: Teste de CTA2
     link: null
+  - type: Cta
+    id: CTA011
+    shortTitle: CTA011
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Primary
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    ctaMedia:
+      - type: ctaImage
+        src: /uploads/2014_16_04_midia_ninja.jpg
+        externalUrl: ''
+    ctaText: TEXXTTEXGTOTEXTOADSOFADSFKASDÇLF
+    highlightedText: ldskjfladsçfldasfkladsçfdfasfasfdafsdf
+    link: null
 ---
