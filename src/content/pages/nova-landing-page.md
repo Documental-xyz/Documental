@@ -531,39 +531,4 @@ components:
                 Back end e documentação: **Thiago Paixão**
 
                 Implementação e documentação:**&#32;Julia Veras**
-  - type: Group
-    id: O que a plataforma faz?_2
-    shortTitle: O que a plataforma faz?_2
-    longTitle: ''
-    description: ''
-    showInMenu: false
-    animations: true
-    txtColor: Highlight
-    customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
-    backgroundMedia: []
-    overlay: ''
-    components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: true
-        components:
-          - type: Text
-            hasDropCap: false
-            content: |-
-              # Documental.xyz é software livre: 
-
-              # não tem custos de instalação, atualização, e pode ser usado, copiado, estudado, modificado e redistribuído sem quaisquer restrições.
-          - type: Spacer
-            desktop: 50px
-            tablet: ''
-            mobile: ''
-          - type: Button
-            link:
-              url: https://www.advocacia.autonoma.xyz/
-              target: _self
-              text: Download
-            icon: ''
-            size: wide
 ---
