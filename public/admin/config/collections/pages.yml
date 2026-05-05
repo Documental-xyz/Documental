@@ -8,7 +8,7 @@ collections:
     slug: '{{slug}}'
     fields:
       - { label: 'Title', name: 'title', widget: 'string', required: false }
-      - { label: 'Slug', name: 'slug', widget: 'string', required: true }
+      - { label: 'Slug', name: 'slug', widget: 'string', required: true, hint: 'final part of the URL that corresponds to this page (ex: documental.xyz/slug)' }
       - *pageSettings
       - *pageTheme
       - *mapBox
