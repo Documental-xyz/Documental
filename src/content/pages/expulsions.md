@@ -22,8 +22,8 @@ pageTheme:
   spacingPatterns:
     - name: Padrão
       mobile: '10'
-      tablet: '11'
-      desktop: '12'
+      tablet: '10'
+      desktop: '10'
 mapbox:
   style: mapbox://styles/marlus/cjyt3uyhf15mr1cthc2942wxz
   token: pk.eyJ1IjoibWFybHVzIiwiYSI6IjlmYlhtaEkifQ.vMxORYorRKnueDl3E5itEQ
@@ -34,7 +34,7 @@ mapbox:
   pitch: '0'
   layers: ''
   columnAlign: center
-  floatingText: true
+  floatingText: false
   views:
     - id: map1_view1
       centerLng: '-58.569363795'
@@ -51,7 +51,7 @@ mapbox:
       notes: ''
       items:
         - icon: show_chart
-          colorIcon: '#bffa80ff'
+          colorIcon: '#d2ff80f5'
           typeIcon: outlined
           iconFill: true
           text: Amazon limits
@@ -483,7 +483,7 @@ components:
         desktop: 500px
         tablet: ''
         mobile: ''
-    columnAlign: right
+    columnAlign: left
     floatingText: true
   - type: Group
     id: _text1
@@ -491,7 +491,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
-    animations: true
+    animations: false
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -509,7 +509,7 @@ components:
           - type: ImageBlock
             wideImage: false
             src: /uploads/expulsion-border-peru-ecuador.jpg
-            alt: ''
+            alt: Photo documentation of the bi-lateral commission in charge of demarcating the border between Peru and Ecuador after the War of ’41. Situated to the south of the Ecuadorian Amazon, the border along the Cordillera del Cóndor mountain range remained undefined until the 1990s.
             description: Photo documentation of the bi-lateral commission in charge of demarcating the border between Peru and Ecuador after the War of ’41. Situated to the south of the Ecuadorian Amazon, the border along the Cordillera del Cóndor mountain range remained undefined until the 1990s.
           - type: Text
             hasDropCap: false
@@ -589,7 +589,7 @@ components:
     longTitle: ''
     description: ''
     showInMenu: false
-    animations: true
+    animations: false
     txtColor: Primary
     customTxtColor: ''
     bgColor: Secondary
@@ -1443,5 +1443,69 @@ components:
 
                 Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
     layout: default
----
+  - type: Group
+    id: CREDITS
+    shortTitle: CREDITS
+    longTitle: ''
+    description: ''
+    showInMenu: true
+    animations: true
+    txtColor: Secondary
+    customTxtColor: ''
+    bgColor: Highlight
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Columns
+        paddingTop: false
+        paddingBottom: false
+        invertOnMobile: false
+        columnsAlign: 33-66
+        column1:
+          components:
+            - type: Spacer
+              desktop: '10'
+              tablet: '10'
+              mobile: '10'
+        column2:
+          components:
+            - type: Text
+              hasDropCap: false
+              content: '# CREDITS'
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 50px
+            - type: Text
+              hasDropCap: false
+              content: |-
+                This report was produced under commission of INREDH (Fundación Regional de Asesoría en Derechos Humanos) and CASCOMI – (Comunidad Amazónica de Acción Social Cordillera del Cóndor Mirador), within the framework of a protection action filed against the Ecuadorian State (Ministry of Mining, Ministry of the Interior, Ministry of the Environment, ARCOM - Agencia de Regulación y Control Minero) and the company Ecuacorriente for the violation of collective rights of the communities of the Cordillera del Cóndor. Our research counted on the invaluable collaboration of [Geografia Critica Ecuador](https://geografiacriticaecuador.org/) and [Acción Ecológica.](http://www.accionecologica.org/)
 
+                **Realized by autonoma, MediaLab-UFRJ and Forensic Architecture**
+
+                **Coordinator**: Paulo Tavares
+
+                **Research and Mapping:** Adriano Belisário and Ana Altberg
+
+                **Web Design:** Marlus Araújo
+
+                **Video:** Camara Shuar
+            - type: Spacer
+              desktop: 100px
+              tablet: 100px
+              mobile: 50px
+            - type: Text
+              hasDropCap: false
+              content: |-
+                **RESEARCH SOURCES**
+
+                Ecuador: La herida abierta del Cóndor Vulneración de derechos, Quito: El Chasqui Ediciones, 2017.
+
+                CEDHU (Comisión Ecuménica de Derechos Humanos) and FIDH (Federación Internacional de Derechos Humanos). Intervención Minera a Gran Escala en Ecuador y Vulneración de Derechos Humanos. Quito: 2010.
+
+                William Sacher and Michelle Báez, ENTRETELONES DE LA MEGAMINERÍA EN EL ECUADOR. Quito: Acción Ecológica, 2015.
+
+                Gloria Chicaiza,El Enclave Minero de la Cordillera del Cóndor. Quito: Acción Ecológica, 2010.
+    layout: default
+---

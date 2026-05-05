@@ -17,7 +17,7 @@ pageSettings:
     - keyword: autônoma advocacy
   seoImage: ''
 pageTheme:
-  primaryColor: ''
+  primaryColor: '#000000'
   secondaryColor: '#ffffff'
   highlightColor: '#3c8bc8'
   auxiliaryColor: '#000000'
@@ -119,41 +119,30 @@ components:
             - type: Text
               hasDropCap: false
               content: '### Desenhada para atender a realidade de movimentos sociais e organizações de defesa de direitos, a plataforma é um aplicativo gratuito e seu uso não exige conhecimento técnico avançado.'
-  - type: Group
-    id: O que a plataforma faz?_2
-    shortTitle: O que a plataforma faz?_2
+  - type: Cta
+    id: O que a plataforma faz?_CTA
+    shortTitle: O que a plataforma faz?_CTA
     longTitle: ''
     description: ''
     showInMenu: false
     animations: true
-    txtColor: Highlight
+    txtColor: Secondary
     customTxtColor: ''
-    bgColor: Secondary
-    customBgColor: ''
+    bgColor: Custom
+    customBgColor: '#184b73fa'
     backgroundMedia: []
     overlay: ''
-    components:
-      - type: Column
-        paddingTop: false
-        paddingBottom: true
-        components:
-          - type: Text
-            hasDropCap: false
-            content: |-
-              # Documental.xyz é software livre: 
-
-              # não tem custos de instalação, atualização, e pode ser usado, copiado, estudado, modificado e redistribuído sem quaisquer restrições.
-          - type: Spacer
-            desktop: 50px
-            tablet: ''
-            mobile: ''
-          - type: Button
-            link:
-              url: https://www.advocacia.autonoma.xyz/
-              target: _self
-              text: Download
-            icon: ''
-            size: ''
+    ctaMedia: []
+    ctaText: '## não tem custos de instalação, atualização, e pode ser usado, copiado, estudado, modificado e redistribuído sem quaisquer restrições.'
+    highlightedText: 'Documental.xyz é software livre:'
+    link:
+      url: https://www.advocacia.autonoma.xyz/
+      target: _self
+      text: Download
+  - type: Spacer
+    desktop: 100px
+    tablet: 100px
+    mobile: 100px
   - type: Group
     id: Como a plataforma funciona?
     shortTitle: Como a plataforma funciona?
@@ -542,5 +531,39 @@ components:
                 Back end e documentação: **Thiago Paixão**
 
                 Implementação e documentação:**&#32;Julia Veras**
----
+  - type: Group
+    id: O que a plataforma faz?_2
+    shortTitle: O que a plataforma faz?_2
+    longTitle: ''
+    description: ''
+    showInMenu: false
+    animations: true
+    txtColor: Highlight
+    customTxtColor: ''
+    bgColor: Secondary
+    customBgColor: ''
+    backgroundMedia: []
+    overlay: ''
+    components:
+      - type: Column
+        paddingTop: false
+        paddingBottom: true
+        components:
+          - type: Text
+            hasDropCap: false
+            content: |-
+              # Documental.xyz é software livre: 
 
+              # não tem custos de instalação, atualização, e pode ser usado, copiado, estudado, modificado e redistribuído sem quaisquer restrições.
+          - type: Spacer
+            desktop: 50px
+            tablet: ''
+            mobile: ''
+          - type: Button
+            link:
+              url: https://www.advocacia.autonoma.xyz/
+              target: _self
+              text: Download
+            icon: ''
+            size: wide
+---
