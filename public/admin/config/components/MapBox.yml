@@ -131,11 +131,11 @@ mapBox: &mapBox
           required: false
           collapsed: true
           hint: 'insert one layer on each line. format: “layerName” or “layerName[property==value]”. ex: “mining” or “mining[country==brasil]”'
-        - label: 'Caption Title'
+        - label: 'Legend Title'
           name: 'title'
           widget: 'string'
           required: false
-        - label: 'Notes'
+        - label: 'Legend Notes'
           name: 'notes'
           widget: 'text'
           required: false
