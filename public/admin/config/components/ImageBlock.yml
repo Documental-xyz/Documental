@@ -25,6 +25,7 @@ imageBlock: &imageBlock
       name: 'alt'
       widget: 'string'
       required: false
+      hint: 'used to describe the image for screen readers'
       collapsed: true
     - label: 'Description'
       name: 'description'
