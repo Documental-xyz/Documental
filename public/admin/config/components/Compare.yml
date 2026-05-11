@@ -10,13 +10,13 @@ compare: &compare
       widget: 'hidden'
       default: 'Compare'
       collapsed: true
-    - label: 'Image Left'
+    - label: 'Left image'
       name: 'imageLeft'
       widget: 'image'
       required: true
       allow_multiple: false
       collapsed: true
-    - label: 'Image Right'
+    - label: 'Right image'
       name: 'imageRight'
       widget: 'image'
       required: true
